@@ -19,7 +19,7 @@
 
 html {
   font-size: 18px;
-  background-color: var(--cream);
+  background-color: #ffffff;
   color: var(--ink);
 }
 
@@ -27,7 +27,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   line-height: 1.8;
-  background-color: var(--cream);
+  background-color: #ffffff;
 }
 
 .page {
@@ -114,7 +114,7 @@ body {
 
 .diff-block {
   padding: 3rem 3.5rem 4rem;
-  background-color: #403d39;
+  background-color: #343a40;
 }
 
 .diff-number {
@@ -181,7 +181,7 @@ body {
   border-bottom-color: var(--rule);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE — tablet (≤ 768px) */
 @media (max-width: 768px) {
   .page {
     margin-left: 0;
@@ -189,15 +189,35 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .tagline { font-size: 2.4rem; }
-  .contact-line { font-size: 1.6rem; }
-  .diff-block { padding: 2.5rem 2rem; }
-  .hero { padding: 4rem 0 4rem; }
+
+  .hero          { padding: 2.5rem 0 2rem; }
+  .what-we-are   { padding: 2rem 0; }
+  .differentiators { padding: 2rem 0; }
+  .contact       { padding: 2rem 0 2.5rem; }
+
+  .tagline       { font-size: 2.4rem; }
+  .section-heading { font-size: 1.35rem; }
+  .contact-line  { font-size: 1.5rem; }
+
+  .diff-block    { padding: 2.5rem 2rem 3rem; }
 }
 
+/* RESPONSIVE — mobile (≤ 480px) */
 @media (max-width: 480px) {
   .page {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .hero          { padding: 2rem 0 1.5rem; }
+  .what-we-are   { padding: 1.5rem 0; }
+  .differentiators { padding: 1.5rem 0; }
+  .contact       { padding: 1.5rem 0 2rem; }
+
+  .tagline       { font-size: 1.9rem; }
+  .section-heading { font-size: 1.2rem; }
+  .contact-line  { font-size: 1.25rem; }
+
+  .diff-block    { padding: 2rem 1.25rem 2.5rem; }
+  .diff-blocks   { margin-top: 2rem; }
 }
